@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-weight: var(--font-weight-base);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (max-width: 1300px) {
+  * {
+    font-size: 0.85em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  * {
+    font-size: 0.75em;
+  }
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6em;
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+svg {
+  vertical-align: top;
+  fill: currentColor;
+}
