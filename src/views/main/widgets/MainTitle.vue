@@ -3,13 +3,7 @@ import MainTitleText from "../../../components/other/MainTitleText.vue"
 </script>
 
 <template>
-  <div class="main-title">
-    <MainTitleText />
-  </div>
+  <MainTitleText />
 </template>
 
-<style lang="scss">
-.main-title {
-  margin-top: 7rem;
-}
-</style>
+<style lang="scss"></style>

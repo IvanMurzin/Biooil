@@ -8,6 +8,5 @@
 .descriprion {
   max-width: 350px;
   font-size: 1.5rem;
-  margin-top: 15rem;
 }
 </style>

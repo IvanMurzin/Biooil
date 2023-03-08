@@ -7,8 +7,4 @@
   </div>
 </template>
 
-<style lang="scss">
-.tagline {
-  margin-top: 15rem;
-}
-</style>
+<style lang="scss"></style>
