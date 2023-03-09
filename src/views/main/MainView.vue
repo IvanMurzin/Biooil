@@ -8,7 +8,7 @@ import MainBackground from "./widgets/MainBackground.vue"
 <template>
   <div class="section">
     <MainBackground />
-    <div class="wrapper limiter">
+    <div class="structure">
       <MainTitle />
       <MainTagline />
       <MainDescription />
@@ -17,7 +17,7 @@ import MainBackground from "./widgets/MainBackground.vue"
 </template>
 
 <style lang="scss">
-.wrapper {
+.structure {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
