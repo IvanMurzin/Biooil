@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import MainTitleText from "../../../components/other/MainTitleText.vue"
+import title from "@/assets/images/biooil_title.svg"
 </script>
 
 <template>
-  <MainTitleText class="title"/>
+  <img :src="title" class="title" />
 </template>
 
 <style scoped lang="scss">
-.title{
+.title {
   width: 20rem;
 }
 </style>
