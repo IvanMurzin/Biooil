@@ -6,7 +6,7 @@
 
 <style lang="scss">
 .descriprion {
-  max-width: 350px;
+  max-width: 25rem;
   font-size: 1.5rem;
 }
 </style>

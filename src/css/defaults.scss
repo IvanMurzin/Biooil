@@ -9,28 +9,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-@media screen and (max-width: 1300px) {
-  * {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 900px) {
-  * {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  * {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 500px) {
-  * {
-    font-size: 10px;
-  }
-}
-
 body {
   color: var(--color-text);
   background: var(--color-background);
@@ -48,27 +26,50 @@ svg {
 }
 
 .limiter {
+  height: 100vh;
+  box-sizing: border-box;
   overflow: hidden;
-  padding: 0 10%;
-  width: 80%;
+  padding: 10% 10%;
 }
 
 @media screen and (max-width: 1300px) {
   .limiter {
-    padding: 0 5%;
-    width: 90%;
+    padding: 10% 5%;
   }
 }
 
 @media screen and (max-width: 900px) {
   .limiter {
-    padding: 0 3%;
-    width: 94%;
+    padding: 15% 3%;
   }
 }
 
 .section {
   overflow: hidden;
   position: relative;
-  height: 100vh;
+}
+
+:root {
+  font-size: 1vw;
+}
+@media screen and (max-width: 1300px) {
+  :root {
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  :root {
+    font-size: 0.9vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 0.8vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  :root {
+    font-size: 0.7vw;
+  }
 }

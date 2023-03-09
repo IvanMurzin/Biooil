@@ -3,7 +3,11 @@ import MainTitleText from "../../../components/other/MainTitleText.vue"
 </script>
 
 <template>
-  <MainTitleText />
+  <MainTitleText class="title"/>
 </template>
 
-<style lang="scss"></style>
+<style scoped lang="scss">
+.title{
+  width: 20rem;
+}
+</style>

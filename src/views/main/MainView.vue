@@ -9,42 +9,19 @@ import MainBackground from "./widgets/MainBackground.vue"
   <div class="section">
     <MainBackground />
     <div class="wrapper limiter">
-      <MainTitle class="pd-middle" />
-      <MainTagline class="pd-middle" />
-      <MainDescription class="pd-middle" />
+      <MainTitle />
+      <MainTagline />
+      <MainDescription />
     </div>
   </div>
 </template>
 
 <style lang="scss">
 .wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   position: relative;
   z-index: 2;
-}
-
-.pd-middle {
-  padding: 70px 0;
-}
-
-@media screen and (max-width: 1300px) {
-  .pd-middle {
-    padding: 75px 0;
-  }
-}
-@media screen and (max-width: 900px) {
-  .pd-middle {
-    padding: 80px 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .pd-middle {
-    padding: 90px 0;
-  }
-}
-@media screen and (max-width: 500px) {
-  .pd-middle {
-    padding: 95px 0;
-  }
 }
 </style>
