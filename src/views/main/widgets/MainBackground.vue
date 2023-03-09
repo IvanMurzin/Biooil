@@ -16,6 +16,7 @@ import image from "@/assets/main_background.jpg"
   height: 100vh;
 }
 .bg-image {
+  filter: saturate(300%);
   height: 100%;
 }
 
