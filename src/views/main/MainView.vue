@@ -16,7 +16,7 @@ import MainBackground from "./widgets/MainBackground.vue"
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .structure {
   display: flex;
   justify-content: space-between;

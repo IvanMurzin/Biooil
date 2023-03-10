@@ -7,4 +7,4 @@ import MainView from "./main/MainView.vue"
   <MainView />
 </template>
 
-<style lang="scss"></style>
+<style scoped lang="scss"></style>

@@ -1,14 +1,16 @@
 <script setup lang="ts">
-import image from "@/assets/main_background.jpg"
+import image from "@/assets/images/main_background.jpg"
+import MainFloatingImage from "./MainFloatingImage.vue"
 </script>
 
 <template>
   <div class="background">
     <img class="bg-image" :src="image" />
+    <MainFloatingImage />
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .background {
   position: absolute;
   top: 0;
