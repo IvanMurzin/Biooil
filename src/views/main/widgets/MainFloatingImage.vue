@@ -18,6 +18,7 @@ import image from "@/assets/images/floating_image.jpg"
   height: 70vh;
 }
 .image {
+  filter: saturate(300%);
   height: 100%;
 }
 
