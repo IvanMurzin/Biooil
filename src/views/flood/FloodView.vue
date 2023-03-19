@@ -15,8 +15,14 @@ const data: InfoItem = {
   <div class="section">
     <FloodFooter />
     <div class="structure">
-      <div class="wrapper">
-        <FloodHeader />
+      <div class="left">
+        <h3 class="title green">Тысячи нефтеразливов в&nbsp;год</h3>
+      </div>
+      <div class="right">
+        <h4 class="info">
+          Загрязнение природных экосистем нефтью и нефтепродуктами происходит на всех этапах работ и во всех отраслях
+          нефтегазового комплекса, а также в хозяйственной деятельности.
+        </h4>
         <AInfoCard class="card" v-bind="data" />
       </div>
     </div>
@@ -24,25 +30,37 @@ const data: InfoItem = {
 </template>
 
 <style scoped lang="scss">
-.wrapper {
-  height: 55vh;
+.structure {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
 }
+.left {
+  padding: 0 2rem;
+  flex: 1;
+}
+.right {
+  flex: 2;
+}
+
 .card {
-  margin: 0 auto;
-  width: 30%;
-}
-@media screen and (max-width: 900px) {
-  .card {
-    width: 50%;
-  }
+  padding-top: 5rem;
+  width: 50%;
 }
 
 @media screen and (max-width: 600px) {
+  .structure {
+    display: block;
+  }
   .card {
+    padding: 0;
     width: 100%;
+  }
+  .info {
+    padding: 4rem 0;
+  }
+  .left {
+    padding: 0;
   }
 }
 </style>
