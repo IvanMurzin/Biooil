@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import AInfoCard, { type InfoItem } from "../../components/AInfoCard.vue"
-import FloodFooter from "./widgets/FloodFooter.vue"
+import image from "@/assets/images/flood_image.png"
+import AFooterImage from "../../components/AFooterImage.vue"
 
 const data: InfoItem = {
   index: 45,
@@ -12,10 +13,10 @@ const data: InfoItem = {
 
 <template>
   <div class="section">
-    <FloodFooter />
+    <AFooterImage :image="image" />
     <div class="structure">
       <div class="left">
-        <h3 class="title green">Тысячи нефтеразливов в&nbsp;год</h3>
+        <h3 class="green">Тысячи нефтеразливов в&nbsp;год</h3>
       </div>
       <div class="right">
         <h4 class="info">

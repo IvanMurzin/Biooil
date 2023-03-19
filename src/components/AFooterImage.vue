@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import image from "@/assets/images/flood_image.png"
+defineProps({
+  image: String,
+})
 </script>
 
 <template>
@@ -13,6 +15,12 @@ import image from "@/assets/images/flood_image.png"
   left: 0;
   right: 0;
   width: 100vw;
-  height: 30vh;
+  height: 35vh;
+}
+
+@media screen and (max-width: 900px) {
+  .image {
+    width: fit-content;
+  }
 }
 </style>
