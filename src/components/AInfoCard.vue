@@ -19,32 +19,42 @@ defineProps<InfoItem>()
 </template>
 
 <style scoped lang="scss">
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
 .index {
-  font-weight: 900;
+  line-height: 8rem;
   font-size: 10rem;
 }
 .title {
-  width: 65%;
-  margin-left: 3.5rem;
-  transform: translateY(-50%);
+  width: 60%;
+  margin-left: -2rem;
+}
+
+.description {
+  margin-top: 3vh;
 }
 
 @media screen and (max-width: 900px) {
   .title {
-    width: 80%; // for third title new line
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .index {
     font-size: 5rem;
+    line-height: 4rem;
   }
   .title {
     font-size: 2rem;
+    margin-left: 1rem;
   }
-}
 
-.description {
-  margin-top: 3vh;
+  .description {
+    margin: 2vh 0;
+  }
 }
 </style>

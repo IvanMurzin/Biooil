@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import InfoCard, { type InfoItem } from "../components/InfoCard.vue"
+import AInfoCard, { type InfoItem } from "../../../components/AInfoCard.vue"
 const data: InfoItem[] = [
   {
     index: 1,
-    title: "Общие сведения о препорате",
+    title: "Общие сведения о биопрепорате",
     description:
       "Биопрепарат «Биоойл-АА» рекомендуется для применения на территории РФ в качестве биопрепарата на основе микроорганизмов - деструкторов углеводородов, для очистки грунта и воды (кроме водоемов 1-го и 2-го классов водопользования).",
   },
@@ -24,7 +24,7 @@ const data: InfoItem[] = [
 
 <template>
   <div class="info-list">
-    <InfoCard class="card" v-for="d in data" :key="d.index" v-bind="d" />
+    <AInfoCard class="card" v-for="d in data" :key="d.index" v-bind="d" />
   </div>
 </template>
 

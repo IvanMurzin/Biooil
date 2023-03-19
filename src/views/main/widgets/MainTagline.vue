@@ -7,8 +7,4 @@
   </div>
 </template>
 
-<style scoped lang="scss">
-.name {
-  padding-top: 3.5rem;
-}
-</style>
+<style scoped lang="scss"></style>
