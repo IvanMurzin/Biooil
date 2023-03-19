@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import FloodHeader from "./widgets/FloodHeader.vue"
 import AInfoCard, { type InfoItem } from "../../components/AInfoCard.vue"
 import FloodFooter from "./widgets/FloodFooter.vue"
 
