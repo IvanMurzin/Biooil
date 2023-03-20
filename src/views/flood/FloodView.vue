@@ -2,6 +2,7 @@
 import AInfoCard, { type InfoItem } from "../../components/AInfoCard.vue"
 import image from "@/assets/images/flood_image.png"
 import AFooterImage from "../../components/AFooterImage.vue"
+import ASeparateView from "../../components/ASeparateView.vue"
 
 const data: InfoItem = {
   index: 45,
@@ -13,54 +14,47 @@ const data: InfoItem = {
 
 <template>
   <div class="section">
-    <AFooterImage :image="image" />
-    <div class="structure">
-      <div class="left">
+    <ASeparateView class="structure">
+      <template #left>
         <h3 class="green">Тысячи нефтеразливов в&nbsp;год</h3>
-      </div>
-      <div class="right">
+      </template>
+      <template #right>
         <h4 class="info">
           Загрязнение природных экосистем нефтью и нефтепродуктами происходит на всех этапах работ и во всех отраслях
           нефтегазового комплекса, а также в хозяйственной деятельности.
         </h4>
         <AInfoCard class="card" v-bind="data" />
-      </div>
-    </div>
+      </template>
+    </ASeparateView>
+    <AFooterImage class="footer-image" :image="image" />
   </div>
 </template>
 
 <style scoped lang="scss">
-.structure {
+.section {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  flex-direction: row;
+  height: 100vh;
 }
-.left {
-  padding: 0 2rem;
-  flex: 1;
+.structure {
+  height: unset;
+  padding-bottom: 4vh;
 }
-.right {
-  flex: 2;
-}
-
 .card {
   padding-top: 5rem;
   width: 50%;
 }
-
+.footer-image {
+  flex: 1;
+}
 @media screen and (max-width: 600px) {
-  .structure {
-    display: block;
-  }
   .card {
     padding: 0;
     width: 100%;
   }
   .info {
     padding: 4rem 0;
-  }
-  .left {
-    padding: 0;
   }
 }
 </style>

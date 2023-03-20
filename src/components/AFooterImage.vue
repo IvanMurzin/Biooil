@@ -5,22 +5,13 @@ defineProps({
 </script>
 
 <template>
-  <img class="image" :src="image" />
+  <div class="footer-image" :style="{ backgroundImage: `url(${image})` }" />
 </template>
 
 <style scoped lang="scss">
-.image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 35vh;
-}
-
-@media screen and (max-width: 900px) {
-  .image {
-    width: fit-content;
-  }
+.footer-image {
+  background: no-repeat center;
+  background-size: cover;
+  max-height: 35vh;
 }
 </style>
