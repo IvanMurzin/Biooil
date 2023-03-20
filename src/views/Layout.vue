@@ -4,7 +4,8 @@ import InfoView from "./info/InfoView.vue"
 import FloodView from "./flood/FloodView.vue"
 import RecoverView from "./recover/RecoverView.vue"
 import NecessityView from "./necessity/NecessityView.vue"
-const data = [MainView, InfoView, FloodView, RecoverView, NecessityView]
+import PatentView from "./patent/PatentView.vue"
+const data = [MainView, InfoView, FloodView, RecoverView, NecessityView, PatentView]
 </script>
 
 <template>
