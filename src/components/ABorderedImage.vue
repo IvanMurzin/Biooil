@@ -5,13 +5,14 @@ defineProps<{
 </script>
 
 <template>
-  <img class="image" :src="image" />
+  <img class="image" :src="image" alt=""/>
 </template>
 
 <style scoped lang="scss">
 .image {
-  max-width: 100%;
-  max-height: 100%;
-  border: 12px solid var(--color-black);
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #050605;
 }
 </style>

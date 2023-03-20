@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import ABorderedImage from "../../components/ABorderedImage.vue"
-import image from "@/assets/images/patent.png"
-</script>
+import image from "@/assets/images/patent.png"</script>
 
 <template>
   <div class="section">
     <div class="structure">
-      <div class="left">
         <h4 class="title">
           Биопрепарат «Биоойл-АА» на основе ассоциации микроорганизмов – деструкторов нефти, применяется при
           рекультивации земель и вод, загрязненных нефтью, для устранения негативных последствий, связанных с
@@ -19,8 +17,9 @@ import image from "@/assets/images/patent.png"
           загрязнениями. <br /><br />Нефтяные углеводороды под воздействием биопрепарата “Биоойл-АА” трансформируются в
           органическое вещество биомассы и безвредные для экосистемы продукты: воду и углекислый газ.
         </p>
-      </div>
-      <div class="right"><ABorderedImage :image="image" /></div>
+        <div class="right">
+          <ABorderedImage :image="image" />
+        </div>
     </div>
   </div>
 </template>
@@ -30,23 +29,49 @@ import image from "@/assets/images/patent.png"
   background-color: var(--color-green);
 }
 .structure {
-  display: flex;
+  // there's no opportunity to fit such blocks into 100vh height.
+  // i think a little scrolling in such slide is possible. noooorm
+  height: unset;
+  min-height: 100vh;
+
+  display: grid;
+  grid-column-gap: 3rem;
+  grid-template-rows: 0fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title, .text {
+  margin-bottom: 2rem;
 }
 
 .right {
-  padding-left: 5rem;
-  flex: 1;
-}
-.text {
-  padding: 2rem 0;
-}
-.left {
-  padding-right: 5rem;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
+  grid-area: 1 / 2 / 3 / 3;
+  aspect-ratio: 296 / 420;
+  font-size: 0;
 }
 
+
 @media screen and (max-width: 900px) {
+  .structure {
+    // if commented out, .text and .right will be the same width.
+    // if not commented, .text will be greater than .right.
+    // as you wish.
+    //grid-template-columns: auto;
+  }
+  .right {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .title {
+    grid-column: 1 / 3;
+  }
+}
+@media screen and (max-width: 600px) {
+  .structure {
+    display: block;
+  }
+  .right {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 </style>
