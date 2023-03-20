@@ -1,7 +1,7 @@
 <script setup lang="ts">
-defineProps({
-  image: String,
-})
+defineProps<{
+  image: string
+}>()
 </script>
 
 <template>

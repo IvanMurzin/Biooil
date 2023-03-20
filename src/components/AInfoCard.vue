@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ALarge from "./ALarge.vue";
 export interface InfoItem {
   index: number
   title: string
@@ -11,7 +12,7 @@ defineProps<InfoItem>()
 <template>
   <div class="card">
     <div class="header">
-      <h1 class="index green">{{ index }}</h1>
+      <ALarge class="green">{{ index }}</ALarge>
       <h4 class="title">{{ title }}</h4>
     </div>
     <p class="description">{{ description }}</p>
@@ -23,10 +24,6 @@ defineProps<InfoItem>()
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-}
-.index {
-  line-height: 8rem;
-  font-size: 10rem;
 }
 .title {
   width: 60%;
@@ -44,10 +41,6 @@ defineProps<InfoItem>()
 }
 
 @media screen and (max-width: 600px) {
-  .index {
-    font-size: 5rem;
-    line-height: 4rem;
-  }
   .title {
     font-size: 2rem;
     margin-left: 1rem;

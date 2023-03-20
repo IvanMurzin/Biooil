@@ -1,6 +1,7 @@
 :root {
   --color-white: #ffffff;
   --color-green: #39a041;
+  --color-black: #000000;
 
   --color-background: #000000;
 
@@ -9,6 +10,10 @@
 
 .green {
   color: var(--color-green);
+}
+
+.black {
+  color: var(--color-black);
 }
 
 .white {
