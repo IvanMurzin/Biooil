@@ -1,29 +1,29 @@
 <script setup lang="ts">
 import ABorderedImage from "../../components/ABorderedImage.vue"
-import image from "@/assets/images/patent.png"</script>
+import image from "@/assets/images/patent.png"
+</script>
 
 <template>
   <div class="section">
     <div class="structure">
-        <h4 class="title">
-          Биопрепарат «Биоойл-АА» на основе ассоциации микроорганизмов – деструкторов нефти, применяется при
-          рекультивации земель и вод, загрязненных нефтью, для устранения негативных последствий, связанных с
-          загрязнением окружающей среды нефтью и нефтепродуктами.
-        </h4>
-        <p class="text">
-          Биологическое воздействие биопрепарата “Биоойл-АА” на окружающую среду характеризуется тем, что бактериальные
-          штаммы, входящие в его состав, не вступают в антагонистические отношения с природной микрофлорой, наоборот,
-          быстро адаптируясь к условиям среды, способствуют активации природного биоценоза, травмированного
-          загрязнениями. <br /><br />Нефтяные углеводороды под воздействием биопрепарата “Биоойл-АА” трансформируются в
-          органическое вещество биомассы и безвредные для экосистемы продукты: воду и углекислый газ.
-        </p>
-        <div class="right">
-          <ABorderedImage :image="image" />
-        </div>
+      <h4 class="title">
+        Биопрепарат «Биоойл-АА» на основе ассоциации микроорганизмов – деструкторов нефти, применяется при рекультивации
+        земель и вод, загрязненных нефтью, для устранения негативных последствий, связанных с загрязнением окружающей
+        среды нефтью и нефтепродуктами.
+      </h4>
+      <p class="text">
+        Биологическое воздействие биопрепарата “Биоойл-АА” на окружающую среду характеризуется тем, что бактериальные
+        штаммы, входящие в его состав, не вступают в антагонистические отношения с природной микрофлорой, наоборот,
+        быстро адаптируясь к условиям среды, способствуют активации природного биоценоза, травмированного загрязнениями.
+        <br /><br />Нефтяные углеводороды под воздействием биопрепарата “Биоойл-АА” трансформируются в органическое
+        вещество биомассы и безвредные для экосистемы продукты: воду и углекислый газ.
+      </p>
+      <div class="right">
+        <ABorderedImage :image="image" />
+      </div>
     </div>
   </div>
 </template>
-
 <style scoped lang="scss">
 .section {
   background-color: var(--color-green);
@@ -31,16 +31,18 @@ import image from "@/assets/images/patent.png"</script>
 .structure {
   // there's no opportunity to fit such blocks into 100vh height.
   // i think a little scrolling in such slide is possible. noooorm
+  // ladno.terpim.terpim.terpim.terpim.terpim.terpim
   height: unset;
   min-height: 100vh;
 
   display: grid;
   grid-column-gap: 3rem;
   grid-template-rows: 0fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 7fr 5fr;
 }
 
-.title, .text {
+.title,
+.text {
   margin-bottom: 2rem;
 }
 
@@ -50,14 +52,7 @@ import image from "@/assets/images/patent.png"</script>
   font-size: 0;
 }
 
-
 @media screen and (max-width: 900px) {
-  .structure {
-    // if commented out, .text and .right will be the same width.
-    // if not commented, .text will be greater than .right.
-    // as you wish.
-    //grid-template-columns: auto;
-  }
   .right {
     grid-area: 2 / 2 / 3 / 3;
   }
