@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ALarge from "./ALarge.vue";
+import ALarge from "./ALarge.vue"
 export interface InfoItem {
   index: number
   title: string

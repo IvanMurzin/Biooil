@@ -42,11 +42,11 @@ import ATitleText from "../../components/ATitleText.vue"
   flex: 1;
 }
 
-.text{
+.text {
   padding: 3rem 0;
 }
 @media screen and (max-width: 600px) {
-  .title{
+  .title {
     padding: 2rem 0;
   }
 }

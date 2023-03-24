@@ -3,7 +3,7 @@ import PatentView from "./patent/PatentView.vue"
 import ExpertiseView from "./expertise/ExpertiseView.vue"
 import VueCarousel from "@chenfengyuan/vue-carousel"
 
-const data = [ExpertiseView]
+const data = [PatentView, ExpertiseView]
 </script>
 
 <template>

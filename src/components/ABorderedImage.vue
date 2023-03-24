@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <img class="image" :src="image" alt=""/>
+  <img class="image" :src="image" alt="" />
 </template>
 
 <style scoped lang="scss">
