@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ABorderedImage from "../../components/ABorderedImage.vue"
 import image from "@/assets/images/patent.png"
+import ABorderedImage from "@/components/ABorderedImage.vue";
 </script>
 
 <template>

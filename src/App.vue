@@ -1,7 +1,7 @@
+<script setup lang="ts">
+import Layout from "./views/Layout.vue"
+</script>
+
 <template>
-  <router-view v-slot="{ Component }">
-    <transition name="slide">
-      <component :is="Component"></component>
-    </transition>
-  </router-view>
+  <layout />
 </template>
