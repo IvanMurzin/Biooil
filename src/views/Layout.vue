@@ -7,7 +7,6 @@ import NecessityView from "./necessity/NecessityView.vue"
 import DocumentView from "./document/DocumentView.vue"
 import { Splide, SplideSlide } from "@splidejs/vue-splide"
 import "@splidejs/vue-splide/css"
-const data = [MainView, InfoView, FloodView, RecoverView, NecessityView, DocumentView]
 </script>
 
 <template>
