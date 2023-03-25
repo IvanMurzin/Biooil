@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: var(--font-weight-base);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+svg {
+  vertical-align: top;
+  fill: currentColor;
+}
+
+.structure {
+  height: 100vh;
+  width: 80%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 8vh 0;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .structure {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .structure {
+    width: 90%;
+  }
+}
+
+.section {
+  overflow: hidden;
+  position: relative;
+}
+
+:root {
+  font-size: 0.9vw;
+}
+
+@media screen and (max-width: 1300px) {
+  :root {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    font-size: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  :root {
+    font-size: 2.5vw;
+  }
+}

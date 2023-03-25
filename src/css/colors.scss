@@ -1,0 +1,21 @@
+:root {
+  --color-white: #ffffff;
+  --color-green: #39a041;
+  --color-black: #000000;
+
+  --color-background: #000000;
+
+  --color-text: #ffffff;
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.black {
+  color: var(--color-black);
+}
+
+.white {
+  color: var(--color-white);
+}
