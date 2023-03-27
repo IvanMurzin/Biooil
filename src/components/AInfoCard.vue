@@ -4,6 +4,7 @@ export interface InfoItem {
   index: number
   title: string
   description: string
+  largeTitle?: boolean
 }
 
 defineProps<InfoItem>()
@@ -13,7 +14,8 @@ defineProps<InfoItem>()
   <div class="card">
     <div class="header">
       <ALarge class="green">{{ index }}</ALarge>
-      <h4 class="title">{{ title }}</h4>
+      <h2 v-if="!!largeTitle" class="title">{{ title }}</h2>
+      <h4 v-else class="title">{{ title }}</h4>
     </div>
     <p class="description">{{ description }}</p>
   </div>
@@ -27,6 +29,7 @@ defineProps<InfoItem>()
 }
 .title {
   width: 60%;
+  font-weight: 600;
   margin-left: -2rem;
 }
 

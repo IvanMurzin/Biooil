@@ -5,6 +5,7 @@ import FloodView from "./flood/FloodView.vue"
 import RecoverView from "./recover/RecoverView.vue"
 import NecessityView from "./necessity/NecessityView.vue"
 import DocumentView from "./document/DocumentView.vue"
+import ClearedView from "./cleared/ClearedView.vue"
 import { Splide, SplideSlide } from "@splidejs/vue-splide"
 import "@splidejs/vue-splide/css"
 </script>
@@ -27,6 +28,7 @@ import "@splidejs/vue-splide/css"
     <SplideSlide><RecoverView /></SplideSlide>
     <SplideSlide><NecessityView /></SplideSlide>
     <SplideSlide><DocumentView /></SplideSlide>
+    <SplideSlide><ClearedView /></SplideSlide>
   </Splide>
 </template>
 
