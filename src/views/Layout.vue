@@ -7,6 +7,7 @@ import NecessityView from "./necessity/NecessityView.vue"
 import DocumentView from "./document/DocumentView.vue"
 import ClearedView from "./cleared/ClearedView.vue"
 import { Splide, SplideSlide } from "@splidejs/vue-splide"
+import BeforeAfterCarousel from "./beforeafter/BeforeAfterCarousel.vue"
 import "@splidejs/vue-splide/css"
 </script>
 
@@ -28,7 +29,8 @@ import "@splidejs/vue-splide/css"
     <SplideSlide><RecoverView /></SplideSlide>
     <SplideSlide><NecessityView /></SplideSlide>
     <SplideSlide><ClearedView /></SplideSlide>
-    
+    <SplideSlide><BeforeAfterCarousel /></SplideSlide>
+
     <SplideSlide><DocumentView /></SplideSlide>
   </Splide>
 </template>
