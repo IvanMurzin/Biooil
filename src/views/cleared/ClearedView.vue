@@ -70,7 +70,7 @@ const data: InfoItem = {
 }
 @media screen and (max-width: 600px) {
   .card {
-    padding: 0;
+    padding: 3rem 0;
     width: 100%;
   }
   .img-wrapper {

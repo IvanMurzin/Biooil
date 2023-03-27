@@ -27,8 +27,9 @@ import "@splidejs/vue-splide/css"
     <SplideSlide><FloodView /></SplideSlide>
     <SplideSlide><RecoverView /></SplideSlide>
     <SplideSlide><NecessityView /></SplideSlide>
-    <SplideSlide><DocumentView /></SplideSlide>
     <SplideSlide><ClearedView /></SplideSlide>
+    
+    <SplideSlide><DocumentView /></SplideSlide>
   </Splide>
 </template>
 
