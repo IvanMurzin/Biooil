@@ -46,19 +46,7 @@ const data: InfoItem = {
 .img {
   height: 100%;
 }
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-}
-.structure {
-  height: unset;
-  padding-bottom: 4vh;
-}
-.card {
-  width: 100%;
-}
+
 .title {
   padding: 2rem 0;
 }
@@ -71,7 +59,6 @@ const data: InfoItem = {
 @media screen and (max-width: 600px) {
   .card {
     padding: 3rem 0;
-    width: 100%;
   }
   .img-wrapper {
     max-height: 10vh;
