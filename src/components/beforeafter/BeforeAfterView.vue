@@ -15,7 +15,6 @@ defineProps<{
 </script>
 
 <template>
-  <BackgroudImagedView />
   <div class="section structure">
     <h3 class="title green">{{ title }}</h3>
     <div class="wrapper">
@@ -44,10 +43,6 @@ defineProps<{
 @media screen and (max-width: 900px) {
   .wrapper {
     height: 100%;
-  }
-
-  .card {
-    padding: 0 2rem;
   }
 }
 </style>

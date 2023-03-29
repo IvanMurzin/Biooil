@@ -66,4 +66,12 @@ const isBefore = props.type == "before"
     flex: auto;
   }
 }
+@media screen and (max-width: 900px) {
+  .before-after {
+    padding: 1rem 0;
+  }
+  .card {
+    display: block;
+  }
+}
 </style>
