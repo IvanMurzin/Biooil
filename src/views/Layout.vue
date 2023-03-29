@@ -9,6 +9,16 @@ import ClearedView from "./cleared/ClearedView.vue"
 import { Splide, SplideSlide } from "@splidejs/vue-splide"
 import BeforeAfterCarousel from "./beforeafter/BeforeAfterCarousel.vue"
 import "@splidejs/vue-splide/css"
+const pages = [
+  MainView,
+  InfoView,
+  FloodView,
+  RecoverView,
+  NecessityView,
+  ClearedView,
+  BeforeAfterCarousel,
+  DocumentView,
+]
 </script>
 
 <template>
@@ -21,17 +31,10 @@ import "@splidejs/vue-splide/css"
       arrows: false,
       wheelMinThreshold: 10,
       wheelSleep: 1000,
+      autoHeight: true,
     }"
   >
-    <SplideSlide><MainView /></SplideSlide>
-    <SplideSlide><InfoView /></SplideSlide>
-    <SplideSlide><FloodView /></SplideSlide>
-    <SplideSlide><RecoverView /></SplideSlide>
-    <SplideSlide><NecessityView /></SplideSlide>
-    <SplideSlide><ClearedView /></SplideSlide>
-    <SplideSlide><BeforeAfterCarousel /></SplideSlide>
-
-    <SplideSlide><DocumentView /></SplideSlide>
+    <SplideSlide v-for="(p, i) of pages" :key="i"><component :is="p" /></SplideSlide>
   </Splide>
 </template>
 
