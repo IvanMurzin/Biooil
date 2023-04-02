@@ -15,7 +15,7 @@ import "@splidejs/vue-splide/css"
 import DrugView from "./drug/DrugView.vue"
 import StrainsView from "./strains/StrainsView.vue"
 import ChemicalView from "./chemical/ChemicalView.vue"
-import ACircledPage from "@/components/ACircledPage.vue"
+import FirstCircledView from "./circled/FirstCircledView.vue"
 const pages = [
   MainView,
   InfoView,
@@ -29,7 +29,7 @@ const pages = [
   ProductionView,
   StrainsView,
   ChemicalView,
-  ACircledPage,
+  FirstCircledView,
   DrugView,
   DocumentView,
 ]

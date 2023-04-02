@@ -1,16 +1,23 @@
 <script setup lang="ts">
-import image from "@/assets/images/circle.png"
+export interface CircledCard {
+  title: string
+  text: string
+  time: string
+  description: string
+  image: string
+}
+defineProps<CircledCard>()
 </script>
 
 <template>
   <div class="card">
     <div class="head">
       <img class="image" :src="image" />
-      <h4 class="title green">Аварийные нефтяные разливы на грунте</h4>
+      <h4 class="title green">{{ title }}</h4>
     </div>
-    <p class="text">Исходный уровень загрязнения составил 8300 мг/кг.</p>
-    <p class="green">Через один месяц:</p>
-    <p>Остаточное содержание нефти и продуктов её трансформации и составили 970 мг/кг Эффективность очистки - 88,3%.</p>
+    <p class="text">{{ text }}</p>
+    <p class="green">{{ time }}</p>
+    <p>{{ description }}</p>
   </div>
 </template>
 
@@ -18,6 +25,7 @@ import image from "@/assets/images/circle.png"
 .head {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .image {
   width: 10rem;

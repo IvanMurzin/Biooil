@@ -1,18 +1,21 @@
 <script setup lang="ts">
-import ACircleCard from "./ACircleCard.vue"
+import ACircleCard, { CircledCard } from "./ACircleCard.vue"
+defineProps<{
+  title: string
+  first: CircledCard
+  second: CircledCard
+  third: CircledCard
+}>()
 </script>
 
 <template>
   <div class="section">
     <div class="structure">
-      <h3 class="title green">
-        Эффективность применения биопрепарата «Биоойл-АА» для биоремедиации загрязненных нефтью грунтов и вод в
-        различных модельных средах
-      </h3>
+      <h3 class="title green">{{ title }}</h3>
       <div class="info-list">
-        <ACircleCard class="card" />
-        <ACircleCard class="card" />
-        <ACircleCard class="card" />
+        <ACircleCard v-bind="first" class="card" />
+        <ACircleCard v-bind="second" class="card" />
+        <ACircleCard v-bind="third" class="card" />
       </div>
     </div>
   </div>
@@ -37,7 +40,7 @@ import ACircleCard from "./ACircleCard.vue"
 @media screen and (max-width: 600px) {
   .title {
     font-size: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
   }
   .info-list {
     align-items: normal;
@@ -45,7 +48,7 @@ import ACircleCard from "./ACircleCard.vue"
   }
 
   .card {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 }
 </style>
