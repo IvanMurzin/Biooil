@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import BackgroudImagedView from "../BackgroudImagedView.vue"
 import BeforeAfterCard from "./BeforeAfterCard.vue"
 defineProps<{
   title: string
