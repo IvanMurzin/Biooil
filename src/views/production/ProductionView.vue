@@ -1,15 +1,7 @@
 <script setup lang="ts">
-import AInfoCard, { type InfoItem } from "../../components/AInfoCard.vue"
 import image from "@/assets/images/production.png"
 import AFooterImage from "../../components/AFooterImage.vue"
 import ASeparateView from "../../components/ASeparateView.vue"
-
-const data: InfoItem = {
-  index: 45,
-  title: "млн.тонн потеря\xa0нефти",
-  description:
-    "Согласно экспертным оценкам, потери нефти в мире при ее добыче, переработке и использовании превышают 45 млн. тонн в год, или 2% от ее добычи.",
-}
 </script>
 
 <template>
@@ -53,7 +45,7 @@ const data: InfoItem = {
 
 ul {
   margin-left: 3rem;
-  list-style: none; 
+  list-style: none;
 }
 
 ul li::before {

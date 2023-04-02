@@ -12,6 +12,7 @@ import BeforeAfterVerticalCarousel from "./beforeafter/BeforeAfterVerticalCarous
 import SertificateView from "./sertificates/SertificatesView.vue"
 import ProductionView from "./production/ProductionView.vue"
 import "@splidejs/vue-splide/css"
+import DrugView from "./drug/DrugView.vue"
 const pages = [
   MainView,
   InfoView,
@@ -23,6 +24,7 @@ const pages = [
   BeforeAfterVerticalCarousel,
   SertificateView,
   ProductionView,
+  DrugView,
   DocumentView,
 ]
 </script>
