@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import ALarge from "@/components/ALarge.vue"
+defineProps<{
+  text: string
+}>()
 </script>
 
 <template>
   <div>
     <div class="wrapper">
       <h2 class="prefix">от</h2>
-      <ALarge class="text black">+1°С</ALarge>
+      <ALarge class="text black">{{ text }}</ALarge>
     </div>
   </div>
 </template>
@@ -17,26 +20,25 @@ import ALarge from "@/components/ALarge.vue"
   align-items: flex-end;
 }
 .prefix {
+  position: relative;
   font-weight: 600;
+  z-index: 2;
 }
 .text {
   padding: 1rem 0;
   margin-left: -2rem;
+  font-size: 8rem;
+  line-height: 6rem;
 }
-
 @media screen and (max-width: 900px) {
   .text {
-    font-size: 8rem;
-    line-height: 6rem;
+    font-size: 6rem;
+    line-height: 4rem;
   }
 }
-
 @media screen and (max-width: 600px) {
-  .wrapper {
-    justify-content: center;
-  }
-
   .text {
+    margin: 0 0 0 2rem;
     font-size: 6rem;
     line-height: 4rem;
   }

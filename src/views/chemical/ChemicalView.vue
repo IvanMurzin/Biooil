@@ -11,18 +11,18 @@ import AChemicalCard from "./widgets/AChemicalCard.vue"
       </h3>
       <div class="info-list">
         <div class="card">
-          <AChemicalCard />
-          <AChemicalCard />
+          <AChemicalCard text="+1°С" />
+          <AChemicalCard text="+38°С" />
           <p class="text">Температурный диапазон</p>
         </div>
         <div class="card">
-          <AChemicalCard />
-          <AChemicalCard />
+          <AChemicalCard text="pH&nbsp;3,5" />
+          <AChemicalCard text="pH&nbsp;8,0" />
           <p class="text">Кислотность почв</p>
         </div>
         <div class="card">
-          <AChemicalCard style="visibility: hidden" />
-          <AChemicalCard />
+          <AChemicalCard text="30‰" style="visibility: hidden" />
+          <AChemicalCard text="30‰" />
           <p class="text">Соленость морей</p>
         </div>
       </div>
@@ -47,7 +47,6 @@ import AChemicalCard from "./widgets/AChemicalCard.vue"
 }
 .card {
   padding: 0 1rem;
-  flex: 1;
 }
 
 .text {
@@ -61,9 +60,6 @@ import AChemicalCard from "./widgets/AChemicalCard.vue"
   .info-list {
     align-items: normal;
     flex-direction: column;
-  }
-  .text {
-    text-align: center;
   }
 }
 </style>
