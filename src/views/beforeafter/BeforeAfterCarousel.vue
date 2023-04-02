@@ -6,7 +6,7 @@ import image3 from "@/assets/images/before1.png"
 import image4 from "@/assets/images/after1.png"
 import { Splide, SplideSlide } from "@splidejs/vue-splide"
 import "@splidejs/vue-splide/css"
-import BackgroudImagedView from "@/components/BackgroudImagedView.vue"
+import BackgroudImagedView from "@/components/ABackgroudImaged.vue.js"
 const data = [
   {
     before: {

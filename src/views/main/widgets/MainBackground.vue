@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BackgroudImagedView from "@/components/BackgroudImagedView.vue"
+import BackgroudImagedView from "@/components/ABackgroudImaged.vue"
 import MainFloatingImage from "./MainFloatingImage.vue"
 </script>
 

@@ -3,7 +3,7 @@ import image1 from "@/assets/images/before2.png"
 import image2 from "@/assets/images/after2.png"
 import { Splide, SplideSlide } from "@splidejs/vue-splide"
 import "@splidejs/vue-splide/css"
-import BackgroudImagedView from "@/components/BackgroudImagedView.vue"
+import BackgroudImagedView from "@/components/ABackgroudImaged.vue.js"
 import BeforeAfterVerticalView from "@/components/beforeafter/BeforeAfterVerticalView.vue"
 const data = [
   {
