@@ -14,6 +14,7 @@ import ProductionView from "./production/ProductionView.vue"
 import "@splidejs/vue-splide/css"
 import DrugView from "./drug/DrugView.vue"
 import StrainsView from "./strains/StrainsView.vue"
+import ChemicalView from "./chemical/ChemicalView.vue"
 const pages = [
   MainView,
   InfoView,
@@ -26,6 +27,7 @@ const pages = [
   SertificateView,
   ProductionView,
   StrainsView,
+  ChemicalView,
   DrugView,
   DocumentView,
 ]
