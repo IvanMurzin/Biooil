@@ -1,41 +1,33 @@
 <script setup lang="ts">
 import image from "@/assets/images/drug.png"
+import ATitleTextSmall from "@/components/ATitleTextSmall.vue"
+const data = [
+  {
+    title: "Acinetobacter, Enterobacter, Bacillus",
+    text: "Биопрепарат «Биоойл АА» представляет собой смесь лиофилизированных культур микроорганизмов Acinetobacter, Enterobacter, Bacillus.",
+  },
+  {
+    title: "Природные штаммы",
+    text: "Штаммы микроорганизмов, входящие в состав биопрепарата, являются природными и выделены из образцов грунта, загрязнённого нефтепродуктами, отобраны на основании их способности к активному окислению углеводородов нефти.",
+  },
+  {
+    title: "0,8×109 КОЕ",
+    text: "Количество жизнеспособных бактериальных клеток в 1 грамме - не менее 0,8×109 КОЕ. Готовый биопрепарат расфасовывают в емкости – вакуумированные пакеты или пластиковые флаконы с контролем вскрытия.",
+  },
+]
 </script>
 
 <template>
   <div class="section">
     <div class="structure">
-      <div class="text-wrapper">
-        <h3 class="title">Acinetobacter, Enterobacter, Bacillus</h3>
-        <p class="text">
-          Биопрепарат «Биоойл АА» представляет собой смесь лиофилизированных культур микроорганизмов Acinetobacter,
-          Enterobacter, Bacillus.
-        </p>
-      </div>
-      <div class="text-wrapper">
-        <h3 class="title">Природные штаммы</h3>
-        <p class="text">
-          Штаммы микроорганизмов, входящие в состав биопрепарата, являются природными и выделены из образцов грунта,
-          загрязнённого нефтепродуктами, отобраны на основании их способности к активному окислению углеводородов нефти.
-        </p>
-      </div>
-      <div class="text-wrapper">
-        <h3 class="title">0,8×109 КОЕ</h3>
-        <p class="text">
-          Количество жизнеспособных бактериальных клеток в 1 грамме - не менее 0,8×109 КОЕ. Готовый биопрепарат
-          расфасовывают в емкости – вакуумированные пакеты или пластиковые флаконы с контролем вскрытия.
-        </p>
-      </div>
-      <div class="right">
-        <img class="image" :src="image" alt="" />
-      </div>
+      <ATitleTextSmall :title="data[0].title" :text="data[0].text" />
+      <ATitleTextSmall :title="data[1].title" :text="data[1].text" />
+      <ATitleTextSmall :title="data[2].title" :text="data[2].text" />
+      <img class="image" :src="image" alt="" />
     </div>
   </div>
 </template>
 <style scoped lang="scss">
-.image {
-  width: 100%;
-}
 .section {
   background-color: var(--color-green);
 }
@@ -56,7 +48,9 @@ import image from "@/assets/images/drug.png"
   margin-bottom: 2rem;
 }
 
-.right {
+.image {
+  display: block;
+  width: 100%;
   grid-area: 1 / 2 / 3 / 3;
   aspect-ratio: 296 / 420;
   font-size: 0;
@@ -65,9 +59,8 @@ import image from "@/assets/images/drug.png"
 @media screen and (max-width: 900px) {
   .structure {
     grid-template-rows: none;
-    grid-template-columns: none;
   }
-  .right {
+  .image {
     grid-area: 2 / 2 / 3 / 3;
   }
   .title {
@@ -78,7 +71,7 @@ import image from "@/assets/images/drug.png"
   .structure {
     display: block;
   }
-  .right {
+  .image {
     width: 70%;
     margin: 0 auto;
   }
