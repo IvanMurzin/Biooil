@@ -68,10 +68,14 @@ const isBefore = props.type == "before"
 }
 @media screen and (max-width: 900px) {
   .before-after {
-    padding: 1rem 0;
+    display: none;
   }
   .card {
     display: block;
+  }
+  .image{
+    height: 160px;
+    margin-top: 1rem;
   }
 }
 </style>
