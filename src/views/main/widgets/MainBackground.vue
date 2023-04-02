@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import BackgroudImagedView from "@/components/ABackgroudImaged.vue"
+import ABackgroudImage from "@/components/ABackgroudImage.vue"
 import MainFloatingImage from "./MainFloatingImage.vue"
 </script>
 
 <template>
-  <BackgroudImagedView>
+  <ABackgroudImage>
     <MainFloatingImage />
-  </BackgroudImagedView>
+  </ABackgroudImage>
 </template>
 
 <style scoped lang="scss">

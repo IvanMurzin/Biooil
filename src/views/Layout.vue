@@ -9,8 +9,9 @@ import ClearedView from "./cleared/ClearedView.vue"
 import { Splide, SplideSlide } from "@splidejs/vue-splide"
 import BeforeAfterCarousel from "./beforeafter/BeforeAfterCarousel.vue"
 import BeforeAfterVerticalCarousel from "./beforeafter/BeforeAfterVerticalCarousel.vue"
-import "@splidejs/vue-splide/css"
 import SertificateView from "./sertificates/SertificatesView.vue"
+// import ProductionView from "./production/ProductionView.vue"
+import "@splidejs/vue-splide/css"
 const pages = [
   MainView,
   InfoView,
@@ -21,6 +22,7 @@ const pages = [
   BeforeAfterCarousel,
   BeforeAfterVerticalCarousel,
   SertificateView,
+  // ProductionView,
   DocumentView,
 ]
 </script>
