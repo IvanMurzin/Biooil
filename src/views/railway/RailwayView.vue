@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import image from "@/assets/images/drug.png"
+import image from "@/assets/images/train.png"
 import ATitleText from "@/components/ATitleText.vue"
-import ATitleTextSmall from "@/components/ATitleTextSmall.vue"
 </script>
 
 <template>
@@ -60,11 +59,12 @@ import ATitleTextSmall from "@/components/ATitleTextSmall.vue"
     grid-template-areas:
       "A A A A   A A A A   A A A A"
       "B B B B   B B B B   B B B B"
-      "C C C C   C C C C   D D D D";
+      "C C C C   C C D D   D D D D";
   }
 }
 @media screen and (max-width: 600px) {
   .structure {
+    height: unset;
     display: block;
   }
   .card {

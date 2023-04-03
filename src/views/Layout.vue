@@ -11,6 +11,7 @@ import DrugView from "./drug/DrugView.vue"
 import StrainsView from "./strains/StrainsView.vue"
 import ChemicalView from "./chemical/ChemicalView.vue"
 import FirstCircledView from "./circled/FirstCircledView.vue"
+import SecondCircledView from "./circled/SecondCircledView.vue"
 import RailwayView from "./railway/RailwayView.vue"
 import PatentView from "./document/patent/PatentView.vue"
 import EffectivitelyView from "./document/effectivitely/EffectivitelyView.vue"
@@ -19,6 +20,7 @@ import FirstBeforeAfterView from "./beforeafter/FirstBeforeAfterView.vue"
 import SecondBeforeAfterView from "./beforeafter/SecondBeforeAfterView.vue"
 import FirstBeforeAfterVerticalView from "./beforeafter/FirstBeforeAfterVerticalView.vue"
 import SecondBeforeAfterVerticalView from "./beforeafter/SecondBeforeAfterVerticalView.vue"
+import ThirdBeforeAfterVerticalView from "./beforeafter/ThirdBeforeAfterVerticalView.vue"
 import FirstSertificateView from "./sertificates/FirstSertificateView.vue"
 import SecondSertificateView from "./sertificates/SecondSertificateView.vue"
 import ThirdSertificateView from "./sertificates/ThirdSertificateView.vue"
@@ -44,13 +46,16 @@ const pages = [
   EffectivitelyView,
   ChemicalView,
   FirstCircledView,
+  SecondCircledView,
   RailwayView,
-  DocumentView,
+  ThirdBeforeAfterVerticalView,
 ]
 </script>
 
 <template>
-  <component v-for="(p, i) of pages" :key="i" :is="p" />
+  <div style="overflow: hidden">
+    <component v-for="(p, i) of pages" :key="i" :is="p" />
+  </div>
 </template>
 
 <style scoped lang="scss"></style>

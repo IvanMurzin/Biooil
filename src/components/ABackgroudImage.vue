@@ -11,7 +11,6 @@ import image from "@/assets/images/background.jpg"
 
 <style scoped lang="scss">
 .background {
-  overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
