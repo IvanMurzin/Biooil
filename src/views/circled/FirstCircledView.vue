@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import ACircledPage from "@/components/ACircledPage.vue"
-import image from "@/assets/images/circle.png"
+import image1 from "@/assets/images/avatar1.png"
+import image2 from "@/assets/images/avatar2.png"
+import image3 from "@/assets/images/avatar3.png"
 
 const data = {
   title:
@@ -9,7 +11,7 @@ const data = {
     title: "Аварийные нефтяные разливы на грунте",
     text: "Исходный уровень загрязнения составил 8300 мг/кг.",
     time: "Через один месяц:",
-    image: image,
+    image: image1,
     description:
       "Остаточное содержание нефти и продуктов её трансформации и составили 970 мг/кг Эффективность очистки - 88,3%.",
   },
@@ -17,7 +19,7 @@ const data = {
     title: "Аварийные нефтяные разливы на море",
     text: "Исходный уровень загряз- нения составил 2,17 мг/дм3. ПДК нефтепродуктов превы- шен в 43,4 раза Соленость воды 27,7‰.",
     time: "Через 7 дней:",
-    image: image,
+    image: image2,
     description:
       "Остаточное содержание нефти и продуктов её трансформации и составили менее 0,029 мг/дм3. Эффективности очистки био- препаратом - 98,7%.",
   },
@@ -25,7 +27,7 @@ const data = {
     title: "Аварийные нефтяные разливы на заболоченной почве",
     text: "Исходный уровень загрязне- ния составил 2,38 мг/дм3. ПДК нефтепродуктов превышен в 47,6 раза.",
     time: "Через 12 дней:",
-    image: image,
+    image: image3,
     description:
       "Остаточное содержание нефти и продуктов её трансформации и составили менее 0,05 мг/дм3. Эффективности очистки био- препаратом - 97,8%.",
   },

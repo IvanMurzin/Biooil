@@ -28,6 +28,7 @@ defineProps<CircledCard>()
   align-items: center;
 }
 .image {
+  margin-right: 1rem;
   width: 10rem;
 }
 .text {
