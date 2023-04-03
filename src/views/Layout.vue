@@ -6,7 +6,6 @@ import RecoverView from "./recover/RecoverView.vue"
 import NecessityView from "./necessity/NecessityView.vue"
 import DocumentView from "./document/DocumentView.vue"
 import ClearedView from "./cleared/ClearedView.vue"
-import SertificateView from "./sertificates/SertificatesView.vue"
 import ProductionView from "./production/ProductionView.vue"
 import DrugView from "./drug/DrugView.vue"
 import StrainsView from "./strains/StrainsView.vue"
@@ -14,6 +13,7 @@ import ChemicalView from "./chemical/ChemicalView.vue"
 import FirstCircledView from "./circled/FirstCircledView.vue"
 import RailwayView from "./railway/RailwayView.vue"
 import PatentView from "./document/patent/PatentView.vue"
+import EffectivitelyView from "./document/effectivitely/EffectivitelyView.vue"
 import ExperiseView from "./document/expertise/ExpertiseView.vue"
 import FirstBeforeAfterView from "./beforeafter/FirstBeforeAfterView.vue"
 import SecondBeforeAfterView from "./beforeafter/SecondBeforeAfterView.vue"
@@ -21,9 +21,7 @@ import FirstBeforeAfterVerticalView from "./beforeafter/FirstBeforeAfterVertical
 import SecondBeforeAfterVerticalView from "./beforeafter/SecondBeforeAfterVerticalView.vue"
 import FirstSertificateView from "./sertificates/FirstSertificateView.vue"
 import SecondSertificateView from "./sertificates/SecondSertificateView.vue"
-
-// import { Splide, SplideSlide } from "@splidejs/vue-splide"
-// import "@splidejs/vue-splide/css"
+import ThirdSertificateView from "./sertificates/ThirdSertificateView.vue"
 const pages = [
   MainView,
   InfoView,
@@ -42,6 +40,8 @@ const pages = [
   ProductionView,
   DrugView,
   StrainsView,
+  ThirdSertificateView,
+  EffectivitelyView,
   ChemicalView,
   FirstCircledView,
   RailwayView,
