@@ -1,10 +1,17 @@
 <script setup lang="ts">
 import ASertificate from "@/components/ASertificate.vue"
-import image from "@/assets/images/expertise_image.png"
+import image1 from "@/assets/images/sertificate3.png"
+import image2 from "@/assets/images/sertificate4.png"
 </script>
 
 <template>
-  <ASertificate :image1="image" :image2="image" />
+  <div class="background">
+    <ASertificate :image1="image1" :image2="image2" />
+  </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.background {
+  background-image: url("@/assets/images/forest_background.png");
+}
+</style>

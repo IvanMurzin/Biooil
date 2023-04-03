@@ -19,6 +19,9 @@ import FirstBeforeAfterView from "./beforeafter/FirstBeforeAfterView.vue"
 import SecondBeforeAfterView from "./beforeafter/SecondBeforeAfterView.vue"
 import FirstBeforeAfterVerticalView from "./beforeafter/FirstBeforeAfterVerticalView.vue"
 import SecondBeforeAfterVerticalView from "./beforeafter/SecondBeforeAfterVerticalView.vue"
+import FirstSertificateView from "./sertificates/FirstSertificateView.vue"
+import SecondSertificateView from "./sertificates/SecondSertificateView.vue"
+
 // import { Splide, SplideSlide } from "@splidejs/vue-splide"
 // import "@splidejs/vue-splide/css"
 const pages = [
@@ -34,7 +37,8 @@ const pages = [
   SecondBeforeAfterView,
   FirstBeforeAfterVerticalView,
   SecondBeforeAfterVerticalView,
-  SertificateView,
+  FirstSertificateView,
+  SecondSertificateView,
   ProductionView,
   StrainsView,
   ChemicalView,
@@ -46,22 +50,7 @@ const pages = [
 </script>
 
 <template>
-  <!-- <Splide
-    :options="{
-      direction: 'ttb',
-      wheel: true,
-      height: '100vh',
-      speed: 800,
-      arrows: false,
-      wheelMinThreshold: 10,
-      wheelSleep: 1000,
-      autoHeight: true,
-    }"
-  > -->
-  <!-- <SplideSlide v-for="(p, i) of pages" :key="i"> -->
   <component v-for="(p, i) of pages" :key="i" :is="p" />
-  <!-- </SplideSlide> -->
-  <!-- </Splide> -->
 </template>
 
 <style scoped lang="scss"></style>
