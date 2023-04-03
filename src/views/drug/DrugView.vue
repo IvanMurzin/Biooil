@@ -61,6 +61,7 @@ const data = [
 }
 @media screen and (max-width: 600px) {
   .structure {
+    height: unset;
     display: block;
   }
   .image {

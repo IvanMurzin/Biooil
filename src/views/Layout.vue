@@ -50,9 +50,7 @@ const pages = [
 </script>
 
 <template>
-  <div style="overflow: hidden">
-    <component v-for="(p, i) of pages" :key="i" :is="p" />
-  </div>
+  <component v-for="(p, i) of pages" :key="i" :is="p" />
 </template>
 
 <style scoped lang="scss"></style>
