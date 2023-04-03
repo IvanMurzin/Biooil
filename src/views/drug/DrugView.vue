@@ -51,8 +51,6 @@ const data = [
 .image {
   display: block;
   width: 100%;
-  grid-area: 1 / 2 / 3 / 3;
-  aspect-ratio: 296 / 420;
   font-size: 0;
 }
 

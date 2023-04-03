@@ -16,6 +16,7 @@ import DrugView from "./drug/DrugView.vue"
 import StrainsView from "./strains/StrainsView.vue"
 import ChemicalView from "./chemical/ChemicalView.vue"
 import FirstCircledView from "./circled/FirstCircledView.vue"
+import RailwayView from "./railway/RailwayView.vue"
 const pages = [
   MainView,
   InfoView,
@@ -30,6 +31,7 @@ const pages = [
   StrainsView,
   ChemicalView,
   FirstCircledView,
+  RailwayView,
   DrugView,
   DocumentView,
 ]
