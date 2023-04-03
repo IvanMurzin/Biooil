@@ -33,7 +33,7 @@ import image from "@/assets/images/plant_background.png"
 .background {
   position: absolute;
   top: 0;
-  right: -100px;
+  right: -50px;
   height: 100vh;
 }
 .bg-image {
@@ -53,13 +53,13 @@ h4 {
 
 @media screen and (max-width: 1100px) {
   .background {
-    right: -200px;
+    right: -100px;
   }
 }
 
 @media screen and (max-width: 900px) {
   .background {
-    right: -250px;
+    right: -150px;
   }
 }
 @media screen and (max-width: 600px) {

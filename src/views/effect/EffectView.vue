@@ -45,7 +45,7 @@ p {
 }
 p::before {
   position: absolute;
-  top: -6rem;
+  top: -5rem;
   left: -0.5rem;
   content: "\2022";
   color: var(--color-green);
@@ -72,9 +72,11 @@ p::before {
 }
 
 @media screen and (max-width: 600px) {
-    p{
-        font-size: 1.1rem;
-    }
-  
+  .item-list {
+    display: block;
+  }
+  p {
+    font-size: 1.4rem;
+  }
 }
 </style>
