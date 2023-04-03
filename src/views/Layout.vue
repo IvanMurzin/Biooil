@@ -25,6 +25,7 @@ import FirstSertificateView from "./sertificates/FirstSertificateView.vue"
 import SecondSertificateView from "./sertificates/SecondSertificateView.vue"
 import ThirdSertificateView from "./sertificates/ThirdSertificateView.vue"
 import EffectView from "./effect/EffectView.vue"
+import AttensionView from "./attension/AttensionView.vue"
 const pages = [
   MainView,
   InfoView,
@@ -52,6 +53,7 @@ const pages = [
   ThirdBeforeAfterVerticalView,
   EffectView,
   ConclusionView,
+  AttensionView,
 ]
 </script>
 

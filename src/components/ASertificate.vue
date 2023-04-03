@@ -15,9 +15,6 @@ defineProps<{
 </template>
 
 <style scoped lang="scss">
-.section {
-  background-image: url("@/assets/images/main_background.jpg");
-}
 .structure {
   display: flex;
   align-items: center;
