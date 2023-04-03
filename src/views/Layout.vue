@@ -4,11 +4,11 @@ import InfoView from "./info/InfoView.vue"
 import FloodView from "./flood/FloodView.vue"
 import RecoverView from "./recover/RecoverView.vue"
 import NecessityView from "./necessity/NecessityView.vue"
-import DocumentView from "./document/DocumentView.vue"
 import ClearedView from "./cleared/ClearedView.vue"
 import ProductionView from "./production/ProductionView.vue"
 import DrugView from "./drug/DrugView.vue"
 import StrainsView from "./strains/StrainsView.vue"
+import ConclusionView from "./conclusion/ConclusionView.vue"
 import ChemicalView from "./chemical/ChemicalView.vue"
 import FirstCircledView from "./circled/FirstCircledView.vue"
 import SecondCircledView from "./circled/SecondCircledView.vue"
@@ -51,6 +51,7 @@ const pages = [
   RailwayView,
   ThirdBeforeAfterVerticalView,
   EffectView,
+  ConclusionView,
 ]
 </script>
 
