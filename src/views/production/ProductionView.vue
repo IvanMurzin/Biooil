@@ -2,6 +2,10 @@
 import image from "@/assets/images/production.png"
 import AFooterImage from "../../components/AFooterImage.vue"
 import ASeparateView from "../../components/ASeparateView.vue"
+
+const first =
+  "ООО «Биоойл» - в лабораторном комплексе научно-технологического парка в сфере биотехнологий - «Биотехнопарк Кольцово»."
+const second = "Федеральное Казённое Предприятие «Армавир- ская биофабрика» (Краснодарский край)."
 </script>
 
 <template>
@@ -13,13 +17,10 @@ import ASeparateView from "../../components/ASeparateView.vue"
       <template #right>
         <ul>
           <li>
-            <h4 class="info">
-              ООО «Биоойл» - в лабораторном комплексе научно-технологического парка в сфере биотехнологий -
-              «Биотехнопарк Кольцово».
-            </h4>
+            <h4 class="info">{{ first }}</h4>
           </li>
           <li>
-            <h4 class="info">Федеральное Казённое Предприятие «Армавир- ская биофабрика» (Краснодарский край).</h4>
+            <h4 class="info">{{ second }}</h4>
           </li>
         </ul>
         <p class="text">

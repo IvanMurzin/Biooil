@@ -20,9 +20,7 @@ const data = [
 <template>
   <div class="section">
     <div class="structure">
-      <ATitleTextSmall :title="data[0].title" :text="data[0].text" />
-      <ATitleTextSmall :title="data[1].title" :text="data[1].text" />
-      <ATitleTextSmall :title="data[2].title" :text="data[2].text" />
+      <ATitleTextSmall v-for="d in data" :title="d.title" :text="d.text" />
       <img class="image" :src="image" alt="" />
     </div>
   </div>
@@ -32,11 +30,7 @@ const data = [
   background-color: var(--color-green);
 }
 .structure {
-  // there's no opportunity to fit such blocks into 100vh height.
-  // i think a little scrolling in such slide is possible. noooorm
-  // ladno.terpim.terpim.terpim.terpim.terpim.terpim
   min-height: 100vh;
-
   display: grid;
   grid-column-gap: 3rem;
   grid-template-rows: 1fr 1fr 1fr;
@@ -50,7 +44,7 @@ const data = [
 
 .image {
   display: block;
-  width: 100%;
+  width: 80%;
   font-size: 0;
 }
 

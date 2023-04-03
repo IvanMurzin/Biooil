@@ -40,17 +40,19 @@ const pages = [
   FirstSertificateView,
   SecondSertificateView,
   ProductionView,
+  DrugView,
   StrainsView,
   ChemicalView,
   FirstCircledView,
   RailwayView,
-  DrugView,
   DocumentView,
 ]
 </script>
 
 <template>
-  <component v-for="(p, i) of pages" :key="i" :is="p" />
+  <div style="overflow: hidden">
+    <component v-for="(p, i) of pages" :key="i" :is="p" />
+  </div>
 </template>
 
 <style scoped lang="scss"></style>
