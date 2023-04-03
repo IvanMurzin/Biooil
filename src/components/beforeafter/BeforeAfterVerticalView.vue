@@ -2,6 +2,7 @@
 import PhotoCard from "./PhotoCard.vue"
 defineProps<{
   title: string
+  hint?: string
   before: {
     text: string
     image: string
@@ -16,6 +17,7 @@ defineProps<{
 <template>
   <div class="section structure">
     <h3 class="title green">{{ title }}</h3>
+    <p class="hint" v-if="!!hint">{{ hint }}</p>
     <div class="wrapper">
       <div class="text">
         <div class="text-wrapper">
@@ -43,6 +45,10 @@ defineProps<{
 }
 .title {
   max-width: 30rem;
+}
+.hint {
+  max-width: 50vw;
+  padding: 2rem 0;
 }
 
 .text {
@@ -76,6 +82,10 @@ defineProps<{
 }
 
 @media screen and (max-width: 900px) {
+  .hint {
+    padding: 1rem 0;
+    max-width: 100vw;
+  }
   .wrapper {
     flex-direction: column;
   }

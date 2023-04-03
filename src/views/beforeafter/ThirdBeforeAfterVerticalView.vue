@@ -12,12 +12,14 @@ const after = {
   text: "Станция «Инская» Западно-Сибирской железной дороги. Сентябрь 2022 года. Среднее содержание нефтепродуктов  860 мг/кг.",
   image: image2,
 }
+
+const hint = "ОЧИСТКА ЩЕБЕНОЧНОГО БАЛЛАСТА ЖЕЛЕЗНОДОРОЖНЫХ ПУТЕЙ, ЗАГРЯЗНЕННОГО НЕФТЕПРОДУКТАМИ, БЕЗ ВЫЕМКИ ЩЕБНЯ"
 </script>
 
 <template>
   <div style="position: relative">
     <ABackgroudImage />
-    <BeforeAfterVerticalView :title="title" :before="before" :after="after" />
+    <BeforeAfterVerticalView :title="title" :before="before" :after="after" :hint="hint" />
   </div>
 </template>
 
