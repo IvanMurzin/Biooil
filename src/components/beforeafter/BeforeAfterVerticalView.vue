@@ -1,48 +1,35 @@
 <script setup lang="ts">
-import image1 from "@/assets/images/before2.png"
-import image2 from "@/assets/images/before2.png"
 import PhotoCard from "./PhotoCard.vue"
-// defineProps<{
-//   title: string
-//   before: {
-//     text: string
-//     image: string
-//   }
-//   after: {
-//     text: string
-//     image: string
-//   }
-// }>()
-const props = {
+defineProps<{
+  title: string
   before: {
-    text: "Вынгапурское месторождение, май 2008 года. Среднее содержание нефтепродуктов 6 200 мг/кг.",
-    image: image1,
-  },
+    text: string
+    image: string
+  }
   after: {
-    text: "Вынгапурское месторождение, август 2009 года. Среднее содержание нефтепродуктов 590 мг/кг.",
-    image: image2,
-  },
-  title: "Вынгапурское месторождение",
-}
+    text: string
+    image: string
+  }
+}>()
 </script>
 
 <template>
   <div class="section structure">
-    <h3 class="title green">{{ props.title }}</h3>
+    <h3 class="title green">{{ title }}</h3>
     <div class="wrapper">
       <div class="text">
         <div class="text-wrapper">
           <h4 class="green">Фото до:</h4>
-          <p>{{ props.before.text }}</p>
+          <p>{{ before.text }}</p>
         </div>
         <div class="text-wrapper">
           <h4 class="green">Фото после:</h4>
-          <p>{{ props.after.text }}</p>
+          <p>{{ after.text }}</p>
         </div>
       </div>
       <div class="photos">
-        <PhotoCard type="before" :image="props.before.image" class="photo-card" />
-        <PhotoCard type="after" :image="props.after.image" class="photo-card" />
+        <PhotoCard type="before" :image="before.image" class="photo-card" />
+        <PhotoCard type="after" :image="after.image" class="photo-card" />
       </div>
     </div>
   </div>
@@ -79,18 +66,22 @@ const props = {
 
 .photos {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: center;
   flex: 3;
 }
 
 .photo-card {
-  flex: 1;
   margin: 0 0.5rem;
 }
 
 @media screen and (max-width: 900px) {
   .wrapper {
     flex-direction: column;
+  }
+
+  .photos {
+    justify-content: flex-start;
   }
 }
 </style>

@@ -31,7 +31,8 @@ const isBefore = props.type == "before"
 .image {
   flex: 2;
   position: relative;
-  height: 22rem;
+  // max-height: 40vh;
+  max-width: 25rem;
   width: auto;
 }
 

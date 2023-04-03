@@ -6,8 +6,6 @@ import RecoverView from "./recover/RecoverView.vue"
 import NecessityView from "./necessity/NecessityView.vue"
 import DocumentView from "./document/DocumentView.vue"
 import ClearedView from "./cleared/ClearedView.vue"
-import BeforeAfterCarousel from "./beforeafter/BeforeAfterCarousel.vue"
-import BeforeAfterVerticalCarousel from "./beforeafter/BeforeAfterVerticalCarousel.vue"
 import SertificateView from "./sertificates/SertificatesView.vue"
 import ProductionView from "./production/ProductionView.vue"
 import DrugView from "./drug/DrugView.vue"
@@ -17,6 +15,10 @@ import FirstCircledView from "./circled/FirstCircledView.vue"
 import RailwayView from "./railway/RailwayView.vue"
 import PatentView from "./document/patent/PatentView.vue"
 import ExperiseView from "./document/expertise/ExpertiseView.vue"
+import FirstBeforeAfterView from "./beforeafter/FirstBeforeAfterView.vue"
+import SecondBeforeAfterView from "./beforeafter/SecondBeforeAfterView.vue"
+import FirstBeforeAfterVerticalView from "./beforeafter/FirstBeforeAfterVerticalView.vue"
+import SecondBeforeAfterVerticalView from "./beforeafter/SecondBeforeAfterVerticalView.vue"
 // import { Splide, SplideSlide } from "@splidejs/vue-splide"
 // import "@splidejs/vue-splide/css"
 const pages = [
@@ -28,8 +30,10 @@ const pages = [
   PatentView,
   ExperiseView,
   ClearedView,
-  BeforeAfterCarousel,
-  BeforeAfterVerticalCarousel,
+  FirstBeforeAfterView,
+  SecondBeforeAfterView,
+  FirstBeforeAfterVerticalView,
+  SecondBeforeAfterVerticalView,
   SertificateView,
   ProductionView,
   StrainsView,
