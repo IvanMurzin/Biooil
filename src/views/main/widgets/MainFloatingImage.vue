@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import image from "@/assets/images/floating_image.jpg"
+import image from "@/assets/images/forest.jpg"
 </script>
 
 <template>

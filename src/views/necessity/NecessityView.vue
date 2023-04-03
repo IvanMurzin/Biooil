@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import AFooterImage from "../../components/AFooterImage.vue"
-import image from "@/assets/images/nessesety_image.png"
 import ASeparateView from "../../components/ASeparateView.vue"
 import ATitleText from "../../components/ATitleText.vue"
+import image from "@/assets/images/recover.png"
 </script>
 
 <template>

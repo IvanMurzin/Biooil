@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import image from "@/assets/images/main_background.jpg"
+import image from "@/assets/images/background.jpg"
 </script>
 
 <template>

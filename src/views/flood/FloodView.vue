@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AInfoCard, { type InfoItem } from "../../components/AInfoCard.vue"
-import image from "@/assets/images/flood_image.png"
+import image from "@/assets/images/flood.png"
 import AFooterImage from "../../components/AFooterImage.vue"
 import ASeparateView from "../../components/ASeparateView.vue"
 

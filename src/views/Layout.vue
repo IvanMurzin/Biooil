@@ -11,12 +11,12 @@ import BeforeAfterCarousel from "./beforeafter/BeforeAfterCarousel.vue"
 import BeforeAfterVerticalCarousel from "./beforeafter/BeforeAfterVerticalCarousel.vue"
 import SertificateView from "./sertificates/SertificatesView.vue"
 import ProductionView from "./production/ProductionView.vue"
-import "@splidejs/vue-splide/css"
 import DrugView from "./drug/DrugView.vue"
 import StrainsView from "./strains/StrainsView.vue"
 import ChemicalView from "./chemical/ChemicalView.vue"
 import FirstCircledView from "./circled/FirstCircledView.vue"
 import RailwayView from "./railway/RailwayView.vue"
+import "@splidejs/vue-splide/css"
 const pages = [
   MainView,
   InfoView,

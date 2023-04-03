@@ -9,6 +9,7 @@
 
 <style scoped lang="scss">
 .green {
+  font-weight: 500;
   text-shadow: 1px 1px 15px var(--color-black), 10px 0 20px var(--color-black), 10px 0 20px var(--color-black),
     5px 5px 20px var(--color-black);
 }

@@ -2,8 +2,8 @@
 import AFooterImage from "../../components/AFooterImage.vue"
 import RecoverMainText from "./widgets/RecoverMainText.vue"
 import RecoverInfo from "./widgets/RecoverInfo.vue"
-import image from "@/assets/images/recover_image.png"
 import ASeparateView from "../../components/ASeparateView.vue"
+import image from "@/assets/images/polution.png"
 </script>
 
 <template>
