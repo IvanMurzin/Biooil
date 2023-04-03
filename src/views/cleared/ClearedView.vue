@@ -25,9 +25,9 @@ const data: InfoItem = {
         <h3 class="title">Нам доверяют:</h3>
         <div class="wrapper">
           <div class="img-wrapper"><img class="img" :src="img1" /></div>
-          <div class="img-wrapper"><img class="img" :src="img1" /></div>
-          <div class="img-wrapper"><img class="img" :src="img1" /></div>
-          <div class="img-wrapper"><img class="img" :src="img1" /></div>
+          <div class="img-wrapper"><img class="img" :src="img2" /></div>
+          <div class="img-wrapper"><img class="img" :src="img3" /></div>
+          <div class="img-wrapper"><img class="img" :src="img4" /></div>
         </div>
       </template>
     </ASeparateView>

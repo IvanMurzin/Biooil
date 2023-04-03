@@ -6,7 +6,6 @@ import RecoverView from "./recover/RecoverView.vue"
 import NecessityView from "./necessity/NecessityView.vue"
 import DocumentView from "./document/DocumentView.vue"
 import ClearedView from "./cleared/ClearedView.vue"
-import { Splide, SplideSlide } from "@splidejs/vue-splide"
 import BeforeAfterCarousel from "./beforeafter/BeforeAfterCarousel.vue"
 import BeforeAfterVerticalCarousel from "./beforeafter/BeforeAfterVerticalCarousel.vue"
 import SertificateView from "./sertificates/SertificatesView.vue"
@@ -16,13 +15,18 @@ import StrainsView from "./strains/StrainsView.vue"
 import ChemicalView from "./chemical/ChemicalView.vue"
 import FirstCircledView from "./circled/FirstCircledView.vue"
 import RailwayView from "./railway/RailwayView.vue"
-import "@splidejs/vue-splide/css"
+import PatentView from "./document/patent/PatentView.vue"
+import ExperiseView from "./document/expertise/ExpertiseView.vue"
+// import { Splide, SplideSlide } from "@splidejs/vue-splide"
+// import "@splidejs/vue-splide/css"
 const pages = [
   MainView,
   InfoView,
   FloodView,
   RecoverView,
   NecessityView,
+  PatentView,
+  ExperiseView,
   ClearedView,
   BeforeAfterCarousel,
   BeforeAfterVerticalCarousel,
@@ -38,7 +42,7 @@ const pages = [
 </script>
 
 <template>
-  <Splide
+  <!-- <Splide
     :options="{
       direction: 'ttb',
       wheel: true,
@@ -49,9 +53,11 @@ const pages = [
       wheelSleep: 1000,
       autoHeight: true,
     }"
-  >
-    <SplideSlide v-for="(p, i) of pages" :key="i"><component :is="p" /></SplideSlide>
-  </Splide>
+  > -->
+  <!-- <SplideSlide v-for="(p, i) of pages" :key="i"> -->
+  <component v-for="(p, i) of pages" :key="i" :is="p" />
+  <!-- </SplideSlide> -->
+  <!-- </Splide> -->
 </template>
 
 <style scoped lang="scss"></style>

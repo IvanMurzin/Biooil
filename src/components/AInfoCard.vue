@@ -35,6 +35,7 @@ defineProps<InfoItem>()
 
 .description {
   margin-top: 3vh;
+  text-align: justify;
 }
 
 @media screen and (max-width: 900px) {

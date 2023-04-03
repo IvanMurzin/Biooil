@@ -16,6 +16,7 @@ import image from "@/assets/images/forest.jpg"
   left: -4rem;
   transform: translateY(-50%);
   height: 70vh;
+  z-index: 1;
 }
 .image {
   filter: saturate(300%);

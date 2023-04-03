@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import image from "@/assets/images/expertise_image.png"
 import ABorderedImage from "@/components/ABorderedImage.vue"
+import image from "@/assets/images/expertise.png"
 </script>
 
 <template>
