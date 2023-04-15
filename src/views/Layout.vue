@@ -26,6 +26,8 @@ import SecondSertificateView from "./sertificates/SecondSertificateView.vue"
 import ThirdSertificateView from "./sertificates/ThirdSertificateView.vue"
 import EffectView from "./effect/EffectView.vue"
 import AttensionView from "./attension/AttensionView.vue"
+import VueScrollSnap from "vue-scroll-snap";
+
 const pages = [
   MainView,
   InfoView,
@@ -58,9 +60,19 @@ const pages = [
 </script>
 
 <template>
-  <div style="overflow: hidden">
-    <component v-for="(p, i) of pages" :key="i" :is="p" />
-  </div>
+  <VueScrollSnap class="scroll-snap-container">
+  <!-- <div style="overflow: hidden"> -->
+    <component v-for="(p, i) of pages" :key="i" :is="p" class="item"/>
+  <!-- </div> -->
+</VueScrollSnap>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.scroll-snap-container {
+  height: 100vh;
+  width: 100vw;
+  .item {
+    min-height: 100vh;
+  }
+}
+</style>

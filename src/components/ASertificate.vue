@@ -16,7 +16,10 @@ defineProps<{
 
 <style scoped lang="scss">
 .structure {
+  min-height: 100vh !important;
+  height: unset;
   display: flex;
+  gap: 4rem;
   align-items: center;
   justify-content: space-around;
 }
