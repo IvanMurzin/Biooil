@@ -35,14 +35,29 @@ const data: InfoItem = {
 </template>
 
 <style scoped lang="scss">
+.structure {
+  height: unset;
+  min-height: 100vh;
+}
+
+.section {
+  @media (max-width: 800px) {
+    &:deep(.separator) {
+      display: block;
+    }
+  }
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2vw;
 }
+
 .img-wrapper {
   max-height: 16vh;
 }
+
 .img {
   height: 100%;
 }
@@ -56,12 +71,22 @@ const data: InfoItem = {
     max-height: 12vh;
   }
 }
+
 @media screen and (max-width: 600px) {
   .card {
     padding: 3rem 0;
   }
+
   .img-wrapper {
     max-height: 10vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    width: min-content;
+    margin: 0 auto;
   }
 }
 </style>

@@ -18,6 +18,7 @@ import EffectivitelyView from "./document/effectivitely/EffectivitelyView.vue"
 import ExperiseView from "./document/expertise/ExpertiseView.vue"
 import FirstBeforeAfterView from "./beforeafter/FirstBeforeAfterView.vue"
 import SecondBeforeAfterView from "./beforeafter/SecondBeforeAfterView.vue"
+import ZeroBeforeAfterVerticalView from "./beforeafter/ZeroBeforeAfterVerticalView.vue"
 import FirstBeforeAfterVerticalView from "./beforeafter/FirstBeforeAfterVerticalView.vue"
 import SecondBeforeAfterVerticalView from "./beforeafter/SecondBeforeAfterVerticalView.vue"
 import ThirdBeforeAfterVerticalView from "./beforeafter/ThirdBeforeAfterVerticalView.vue"
@@ -40,6 +41,7 @@ const pages = [
   FirstBeforeAfterView,
   SecondBeforeAfterView,
   FirstBeforeAfterVerticalView,
+  ZeroBeforeAfterVerticalView,
   SecondBeforeAfterVerticalView,
   FirstSertificateView,
   SecondSertificateView,

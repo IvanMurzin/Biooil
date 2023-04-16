@@ -21,6 +21,10 @@ import image from "@/assets/images/recover.png"
         </p>
       </template>
     </ASeparateView>
+    <p class="img-text">
+      Обработка загрязнённой поверхности
+      биопрепаратом «Биоойл-АА».
+    </p>
     <AFooterImage class="footer-image" :image="image" />
   </div>
 </template>
@@ -32,7 +36,17 @@ import image from "@/assets/images/recover.png"
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  position: relative;
 }
+.img-text {
+  position: absolute;
+  bottom: calc(35vh);
+  left: 5rem;
+  padding-right: 5rem;
+  font-weight: 100;
+  color: #ffffffd6;
+}
+
 .structure {
   height: unset;
   padding-bottom: 4vh;
@@ -45,6 +59,7 @@ import image from "@/assets/images/recover.png"
 .text {
   padding: 3rem 0;
 }
+
 @media screen and (max-width: 600px) {
   .title {
     padding: 2rem 0;

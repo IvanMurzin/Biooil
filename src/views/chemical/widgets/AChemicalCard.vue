@@ -1,14 +1,17 @@
 <script setup lang="ts">
 import ALarge from "@/components/ALarge.vue"
-defineProps<{
+withDefaults(defineProps<{
   text: string
-}>()
+  prefics?: string
+}>(), {
+  prefics: "от"
+})
 </script>
 
 <template>
   <div>
     <div class="wrapper">
-      <h2 class="prefix">от</h2>
+      <h2 class="prefix">{{ prefics }}</h2>
       <ALarge class="text black">{{ text }}</ALarge>
     </div>
   </div>

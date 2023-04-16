@@ -3,13 +3,13 @@ import BeforeAfterVerticalView from "@/components/beforeafter/BeforeAfterVertica
 import image1 from "@/assets/images/second_before_vertical.png"
 import image2 from "@/assets/images/second_after_vertical.png"
 import ABackgroudImage from "@/components/ABackgroudImage.vue"
-const title = "Станция «Новки-1» Горьковской железной дороги"
+const title = "Станция «Татарская» Западно-Сибирской железной дороги"
 const before = {
-  text: "Станция «Новки-1» Горьковской железной дороги. Июнь 2021 года. Среднее содержание нефтепродуктов 6 150 мг/кг.",
+  text: "Станция «Татарская» Западно-Сибирской железной дороги. Июль 2021 года. Среднее содержание нефтепродуктов 9\xa0355 мг/кг.",
   image: image1,
 }
 const after = {
-  text: "Станция «Новки-1» Горьковской железной дороги. Июль 2021 года. Среднее содержание нефтепродуктов 669 мг/кг.",
+  text: "Станция «Татарская» Западно-Сибирской железной дороги. Сентябрь 2021 года. Среднее содержание нефтепродуктов 586 мг/кг.",
   image: image2,
 }
 </script>

@@ -5,7 +5,7 @@ import image2 from "@/assets/images/first_after.png"
 import ABackgroudImage from "@/components/ABackgroudImage.vue"
 const title = "Вынгапурское месторождение"
 const before = {
-  text: "Вынгапурское месторождение, май 2008 года. Среднее содержание нефтепродуктов 6 200 мг/кг.",
+  text: "Вынгапурское месторождение, май 2008 года. Среднее содержание нефтепродуктов 6\xa0200 мг/кг.",
   image: image1,
 }
 const after = {

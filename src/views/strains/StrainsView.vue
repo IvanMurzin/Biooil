@@ -45,7 +45,7 @@ import image from "@/assets/images/background.jpg"
   height: 100vh;
 }
 .bg-image {
-  filter: saturate(300%);
+  // filter: saturate(300%);
   height: 100%;
 }
 

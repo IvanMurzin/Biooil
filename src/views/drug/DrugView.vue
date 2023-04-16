@@ -20,7 +20,9 @@ const data = [
 <template>
   <div class="section">
     <div class="structure">
-      <ATitleTextSmall v-for="d in data" :title="d.title" :text="d.text" />
+      <div class="text-wrapper">
+        <ATitleTextSmall v-for="d in data" :title="d.title" :text="d.text" class="text"/>
+      </div>
       <img class="image" :src="image" alt="" />
     </div>
   </div>
@@ -31,41 +33,33 @@ const data = [
 }
 .structure {
   min-height: 100vh;
-  display: grid;
-  grid-column-gap: 3rem;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 7fr 5fr;
+  height: unset;
+  display: flex;
+  gap: 5rem;
+  align-items: flex-start;
 }
 
-.title,
 .text {
   margin-bottom: 2rem;
 }
 
 .image {
   display: block;
-  width: 80%;
+  max-width: 40%;
   font-size: 0;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: span 3;
 }
 
 @media screen and (max-width: 900px) {
   .structure {
-    grid-template-rows: none;
-  }
-  .image {
-    grid-area: 2 / 2 / 3 / 3;
-  }
-  .title {
-    grid-column: 1 / 3;
-  }
-}
-@media screen and (max-width: 600px) {
-  .structure {
-    height: unset;
+    // height: unset;
     display: block;
   }
   .image {
     width: 70%;
+    max-width: unset;
     margin: 0 auto;
   }
 }

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import BeforeAfterVerticalView from "@/components/beforeafter/BeforeAfterVerticalView.vue"
-import image1 from "@/assets/images/first_before_vertical.png"
-import image2 from "@/assets/images/first_after_vertical.png"
+import image1 from "@/assets/images/zero_before_vertical.png"
+import image2 from "@/assets/images/zero_after_vertical.png"
 import ABackgroudImage from "@/components/ABackgroudImage.vue"
 
 const title = "Станция «Новки-1» Горьковской железной дороги"

@@ -75,7 +75,11 @@ defineProps<{
   align-items: flex-end;
   justify-content: center;
   flex: 3;
+  @media (max-width: 1300px) {
+    align-items: center;
+  }
 }
+
 
 .photo-card {
   margin: 0 0.5rem;

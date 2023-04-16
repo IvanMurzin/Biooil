@@ -3,7 +3,7 @@
 <template>
   <div class="section">
     <div class="structure">
-      <h3 class="title green">Биопрепарат «Биоойл-АА»</h3>
+      <h3 class="title green">Воздействие биопрепарата «Биоойл-АА» на окружающую среду</h3>
       <div class="item-list">
         <div class="item">
           <p>Биопрепарат не токсичен для человека и теплокровных животных</p>
@@ -38,21 +38,37 @@
 </template>
 
 <style scoped lang="scss">
+.structure {
+  height: unset;
+  min-height: 100vh;
+}
+
+.title {
+  width: 70%;
+  margin-bottom: 5rem;
+}
+
 p {
   position: relative;
   padding: 1rem;
   text-align: justify;
 }
+
 p::before {
   position: absolute;
-  top: -5rem;
+  top: -0.5rem;
   left: -0.5rem;
-  content: "\2022";
-  color: var(--color-green);
+  // content: "\2022";
+  content: '';
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 0.2rem solid #2d6c9a;
+  background-color: var(--color-green);
   font-weight: bold;
   font-size: 10rem;
   display: inline-block;
-  width: 3rem;
+  // width: 3rem;
   z-index: -1;
 }
 
@@ -61,22 +77,25 @@ p::before {
   justify-content: space-between;
   flex-direction: column;
 }
+
 .item-list {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
+
 .item {
   padding: 0 2vw;
   flex: 1;
+  font-weight: 100;
 }
 
 @media screen and (max-width: 600px) {
   .item-list {
     display: block;
   }
+
   p {
     font-size: 1.4rem;
   }
-}
-</style>
+}</style>

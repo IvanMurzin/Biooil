@@ -13,5 +13,7 @@ import image2 from "@/assets/images/sertificate4.png"
 <style scoped lang="scss">
 .background {
   background-image: url("@/assets/images/forest_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

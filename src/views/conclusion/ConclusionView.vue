@@ -29,15 +29,28 @@ import image from "@/assets/images/plant_background.png"
 <style scoped lang="scss">
 .section {
   background-color: var(--color-green);
+  display: flex;
+  flex-direction: row-reverse;
 }
+
+.structure {
+  // width: unset;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .background {
-  position: absolute;
-  top: 0;
-  right: -50px;
-  height: 100vh;
+  // position: absolute;
+  // top: 0;
+  // right: -50px;
+  // height: 100vh;
+  // margin-right: -20%;
+  // max-width: 20vw;
+  min-width: 30vw;
 }
+
 .bg-image {
-  filter: saturate(300%);
+  // filter: saturate(300%);
   height: 100%;
 }
 
@@ -45,6 +58,7 @@ p,
 h4 {
   padding-bottom: 2rem;
 }
+
 .text {
   position: relative;
   z-index: 2;
@@ -53,21 +67,30 @@ h4 {
 
 @media screen and (max-width: 1100px) {
   .background {
-    right: -100px;
+    // right: -100px;
+    width: 30rem;
+    min-width: unset;
   }
 }
 
 @media screen and (max-width: 900px) {
   .background {
-    right: -150px;
+    // right: -150px;
+    // width: 40rem;
   }
 }
+
 @media screen and (max-width: 600px) {
+  .structure {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .text {
     max-width: unset;
   }
+
   .background {
     display: none;
   }
-}
-</style>
+}</style>

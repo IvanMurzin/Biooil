@@ -45,6 +45,9 @@ import ABorderedImage from "@/components/ABorderedImage.vue"
 .text {
   margin-bottom: 2rem;
 }
+.text {
+  font-weight: 100;
+}
 
 .right {
   grid-area: 1 / 2 / 3 / 3;

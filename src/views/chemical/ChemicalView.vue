@@ -12,17 +12,17 @@ import AChemicalCard from "./widgets/AChemicalCard.vue"
       <div class="info-list">
         <div class="card">
           <AChemicalCard text="+1°С" />
-          <AChemicalCard text="+38°С" />
+          <AChemicalCard prefics="до" text="+38°С" />
           <p class="text">Температурный диапазон</p>
         </div>
         <div class="card">
           <AChemicalCard text="pH&nbsp;3,5" />
-          <AChemicalCard text="pH&nbsp;8,0" />
+          <AChemicalCard prefics="до" text="pH&nbsp;8,0" />
           <p class="text">Кислотность почв</p>
         </div>
         <div class="card">
           <AChemicalCard text="30‰" style="visibility: hidden" />
-          <AChemicalCard text="30‰" />
+          <AChemicalCard prefics="до" text="30‰" />
           <p class="text">Соленость морей</p>
         </div>
       </div>
@@ -38,6 +38,7 @@ import AChemicalCard from "./widgets/AChemicalCard.vue"
   display: flex;
   flex-direction: column;
 }
+
 
 .info-list {
   display: flex;
